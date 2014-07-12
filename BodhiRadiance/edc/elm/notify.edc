@@ -31,7 +31,7 @@ group { name: "elm/notify/top/default";
          description { state: "default" 0.0;
             image.normal: "img/popup.png";
             image.border: 10 10 10 10;
-            color: 255 255 255 200;
+            color: 255 255 255 TOOLTIP_OPACITY;
             color_class: "border_frame";
             rel1.offset: 10 10;
             rel2.offset: -10 -10;

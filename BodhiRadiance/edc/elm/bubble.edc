@@ -111,6 +111,7 @@ group { name: "elm/bubble/top_left/default";
             image.middle: SOLID;
             fill.smooth: 0;
             color_class: "border_frame";
+            color: 255 255 255 TOOLTIP_OPACITY;
          }
          description { state: "rtl" 0.0;
             inherit: "default" 0.0;
@@ -278,6 +279,7 @@ group { name: "elm/bubble/top_right/default";
             image.middle: SOLID;
             fill.smooth: 0;
             color_class: "border_frame";
+            color: 255 255 255 TOOLTIP_OPACITY;
          }
          description { state: "rtl" 0.0;
             inherit: "default" 0.0;
@@ -447,6 +449,7 @@ group { name: "elm/bubble/bottom_left/default";
             image.middle: SOLID;
             fill.smooth: 0;
             color_class: "border_frame";
+            color: 255 255 255 TOOLTIP_OPACITY;
          }
          description { state: "rtl" 0.0;
             inherit: "default" 0.0;
@@ -616,6 +619,7 @@ group { name: "elm/bubble/bottom_right/default";
             image.border: 8 24 8 13;
             image.middle: SOLID;
             color_class: "border_frame";
+            color: 255 255 255 TOOLTIP_OPACITY;
          }
          description { state: "rtl" 0.0;
             inherit: "default" 0.0;

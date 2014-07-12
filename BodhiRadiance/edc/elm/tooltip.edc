@@ -1,6 +1,6 @@
 group { name: "elm/label/base/tooltip";
    styles {
-      style { name: "img/tooltip_style";
+      style { name: "tooltip_style";
          base: "font=""Sans"" font_size=12 color=#ffffff wrap=word text_class=bubble";
          tag:  "br" "\n";
          tag: "hilight" "+ font=""Sans"" text_class=bubble";
@@ -13,10 +13,11 @@ group { name: "elm/label/base/tooltip";
          scale: 1;
          description { state: "default" 0.0;
             text {
-               style: "img/tooltip_style";
+               style: "tooltip_style";
                min: 1 1;
                ellipsis: -1;
             }
+         color_class: "border_title_active";
          }
       }
    }
@@ -204,7 +205,8 @@ group { name: "elm/tooltip/base/default";
                border: 7 7 6 8;
             }
             image.middle: SOLID;
-            color: TOOLTIP_COLOR;
+            color_class: "border_frame";
+            color: 255 255 255 TOOLTIP_OPACITY;	
          }
       }
       PART_SHINE("tooltip","pop","img/tooltip-base_SH.png",7 7 6 8)
@@ -227,8 +229,9 @@ group { name: "elm/tooltip/base/default";
                offset: ox oy;                                      \
                to: "pop";                                          \
             }                                                      \
-            image.normal: "img/tooltip-corner-"name_"-tip.png";    \
-            color: TOOLTIP_COLOR;							   		\
+            image.normal: "img/tooltip-corner-"name_"-tip.png";		\
+            color_class: "border_frame";				   			\
+            color: 255 255 255 TOOLTIP_OPACITY;						\
          }                                                         \
          description { state: "visible" 0.0;                       \
             inherit: "default" 0.0;                                \
@@ -323,7 +326,8 @@ group { name: "elm/tooltip/base/default";
             rel1.to: "edge-drag-"name_;                            \
             rel2.to: "edge-drag-"name_;                            \
             image.normal: "img/tooltip-edge-"name_"-tip.png";      \
-            color: TOOLTIP_COLOR ;								   \
+            color_class: "border_frame" ;						   \
+            color: 255 255 255 TOOLTIP_OPACITY;						\
          }                                                         \
       }																\
       PART_SHINE_CLIPTO("edge-img-"name_, "edge-img-"name_, "img/tooltip-edge-"name_"-tip_SH.png", 0 0 0 0, "clipper-edge-"name_)
@@ -393,7 +397,8 @@ group { name: "elm/tooltip/base/default";
             rel1.to: "edge-drag-"name_;                            \
             rel2.to: "edge-drag-"name_;                            \
             image.normal: "img/tooltip-edge-"name_"-tip.png";      \
-            color: TOOLTIP_COLOR ;								   \
+            color_class: "border_frame" ;						   \
+            color: 255 255 255 TOOLTIP_OPACITY;						\
          }                                                         \
       }																\
       PART_SHINE_CLIPTO("edge-img-"name_, "edge-img-"name_, "img/tooltip-edge-"name_"-tip_SH.png", 0 0 0 0, "clipper-edge-"name_)
